@@ -33,7 +33,7 @@ new Vue({
 
         },
         calculateDamage: function(min, max) {
-            return  damage = Math.max(Math.floor(Math.random() + max) + 1, min);
+            return  Math.max(Math.floor(Math.random() * max) + 1, min);
         },
 
         checkWin: function() {
